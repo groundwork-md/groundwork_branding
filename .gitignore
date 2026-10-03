@@ -1,0 +1,7 @@
+.worktrees/
+node_modules/
+release/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
