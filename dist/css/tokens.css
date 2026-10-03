@@ -1,0 +1,33 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+/* Generated, do not edit. Source: tokens/*.json, built by `npm run build`. Licence: Apache-2.0. */
+
+:root {
+  --color-primitive-ink: #16171A;
+  --color-primitive-paper: #FBFBF8;
+  --color-primitive-tile: #2A2C31;
+  --color-primitive-github-light: #FFFFFF;
+  --color-primitive-github-dark: #0D1117;
+  --color-brand-avatar-tile: #2A2C31;
+  --font-family-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-weight-wordmark: 600;
+  --font-weight-mark-heavy: 700;
+  --font-weight-text: 400;
+  --font-letter-spacing-wordmark: -0.015em;
+  --color-ground: #FBFBF8;
+  --color-ink: #16171A;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-ground: #16171A;
+    --color-ink: #FBFBF8;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-ground: #16171A;
+  --color-ink: #FBFBF8;
+  color-scheme: dark;
+}

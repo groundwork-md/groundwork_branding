@@ -1,0 +1,41 @@
+{
+  "$extensions": {
+    "io.github.groundwork-md.license": "Apache-2.0"
+  },
+  "font": {
+    "$description": "Space Grotesk, SIL OFL 1.1, no Reserved Font Name. The wordmark and the card text are outlined to paths in the logo masters, so no font file ships.",
+    "family": {
+      "sans": {
+        "$type": "fontFamily",
+        "$value": [
+          "Space Grotesk",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$description": "Space Grotesk, system fallbacks."
+      }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "wordmark": {
+        "$value": 600,
+        "$description": "The wordmark and the fine mark."
+      },
+      "mark-heavy": {
+        "$value": 700,
+        "$description": "The heavier small-size drawing of the g, used for the avatar."
+      },
+      "text": {
+        "$value": 400,
+        "$description": "The tagline and the repository line on the social preview."
+      }
+    },
+    "letter-spacing": {
+      "wordmark": {
+        "$type": "dimension",
+        "$value": "-0.015em",
+        "$description": "Tracking of the wordmark."
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$extensions": {
+    "io.github.groundwork-md.license": "Apache-2.0"
+  },
+  "$description": "Declared pairs for the WCAG 2.x contrast check (tool/contrast-check.mjs). fg and bg are role names (color.theme.<theme>.<role>, with theme) or full token paths. kind: text 4.5, large-text 3, boundary 3, decoration (no threshold unless min is set). expect: the ratio, rounded to 2 decimals, that must be reproduced. assertFail: the pair must fail its threshold (a rejected option, proving a rule). min overrides the threshold.",
+  "pairs": [
+    {
+      "fg": "ink",
+      "bg": "ground",
+      "theme": "light",
+      "kind": "text",
+      "expect": 17.29,
+      "note": "ink on paper"
+    },
+    {
+      "fg": "ink",
+      "bg": "ground",
+      "theme": "dark",
+      "kind": "text",
+      "expect": 17.29,
+      "note": "paper on ink: the favicon and the social preview"
+    },
+    {
+      "fg": "color.primitive.paper",
+      "bg": "color.brand.avatar-tile",
+      "kind": "text",
+      "expect": 13.48,
+      "note": "the mark on the avatar tile"
+    },
+    {
+      "fg": "color.primitive.ink",
+      "bg": "color.primitive.github-light",
+      "kind": "text",
+      "expect": 17.92,
+      "note": "the wordmark on a light GitHub page"
+    },
+    {
+      "fg": "color.primitive.paper",
+      "bg": "color.primitive.github-dark",
+      "kind": "text",
+      "expect": 18.25,
+      "note": "the wordmark on a dark GitHub page"
+    },
+    {
+      "fg": "color.brand.avatar-tile",
+      "bg": "color.primitive.github-light",
+      "kind": "decoration",
+      "expect": 13.97,
+      "note": "the avatar's edge on a light GitHub page"
+    },
+    {
+      "fg": "color.brand.avatar-tile",
+      "bg": "color.primitive.github-dark",
+      "kind": "decoration",
+      "expect": 1.35,
+      "note": "the avatar's edge on a dark GitHub page: no threshold, lifted from ink for this"
+    },
+    {
+      "fg": "color.primitive.ink",
+      "bg": "color.primitive.github-dark",
+      "kind": "boundary",
+      "expect": 1.06,
+      "assertFail": true,
+      "note": "rejected: an ink tile vanishes on a dark GitHub page"
+    }
+  ]
+}

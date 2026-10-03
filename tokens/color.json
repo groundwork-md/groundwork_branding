@@ -1,0 +1,59 @@
+{
+  "$extensions": {
+    "io.github.groundwork-md.license": "Apache-2.0"
+  },
+  "color": {
+    "$type": "color",
+    "$description": "Two colours, no accent. Primitives hold the only hex values; themes and the avatar tile reference them.",
+    "primitive": {
+      "ink": {
+        "$value": "#16171A",
+        "$description": "Ink: the wordmark and mark on a light ground, and the ground of the favicon and the social preview."
+      },
+      "paper": {
+        "$value": "#FBFBF8",
+        "$description": "Paper: the light ground, and the wordmark and mark on an ink ground."
+      },
+      "tile": {
+        "$value": "#2A2C31",
+        "$description": "Ink lifted for the avatar tile, so the round avatar keeps an edge on a dark page. Used for the avatar only."
+      },
+      "github-light": {
+        "$value": "#FFFFFF",
+        "$description": "Not a brand colour: the light page ground GitHub shows the wordmark and avatar on. Kept to check contrast."
+      },
+      "github-dark": {
+        "$value": "#0D1117",
+        "$description": "Not a brand colour: the dark page ground GitHub shows the wordmark and avatar on. Kept to check contrast."
+      }
+    },
+    "theme": {
+      "light": {
+        "ground": {
+          "$value": "{color.primitive.paper}",
+          "$description": "Page ground."
+        },
+        "ink": {
+          "$value": "{color.primitive.ink}",
+          "$description": "Text, wordmark and mark."
+        }
+      },
+      "dark": {
+        "ground": {
+          "$value": "{color.primitive.ink}",
+          "$description": "Page ground."
+        },
+        "ink": {
+          "$value": "{color.primitive.paper}",
+          "$description": "Text, wordmark and mark."
+        }
+      }
+    },
+    "brand": {
+      "avatar-tile": {
+        "$value": "{color.primitive.tile}",
+        "$description": "Ground of the avatar, behind a paper mark."
+      }
+    }
+  }
+}
