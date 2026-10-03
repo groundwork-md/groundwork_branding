@@ -1,0 +1,17 @@
+groundwork brand
+Copyright 2026 The groundwork authors
+
+This repository carries two licences:
+
+1. Code (design-token sources, build scripts, generator scripts, CI
+   workflows, documentation tooling) is licensed under the Apache License,
+   Version 2.0 -- see LICENSE. Code files carry the tag
+   "SPDX-License-Identifier: Apache-2.0".
+
+2. Brand assets are NOT covered by the Apache License. The groundwork logo,
+   wordmark, mark, avatar, favicons, social preview and anything else that
+   identifies groundwork are copyright The groundwork authors, all rights
+   reserved -- see assets/LICENSE.md.
+
+The Apache-2.0 licence covers the code only. Nothing in LICENSE grants any
+right in the brand assets or in the groundwork name or marks.
