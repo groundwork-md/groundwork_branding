@@ -1,0 +1,29 @@
+{
+  "name": "groundwork-branding",
+  "version": "0.0.0",
+  "private": true,
+  "description": "groundwork brand: design tokens, logo masters and their build.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "npm run check:tokens && node tool/build-tokens.mjs",
+    "check:fresh": "node tool/check-fresh.mjs",
+    "check:tokens": "node tool/validate-tokens.mjs",
+    "check:contrast": "node tool/contrast-check.mjs",
+    "build:logo": "python3 tool/generate_logo.py",
+    "check:logo": "python3 tool/generate_logo.py --check",
+    "package": "node -e \"console.log(\\\"package: not yet implemented\\\")\"",
+    "check:branch": "node tool/branch-lint.mjs",
+    "check:history": "node tool/lint-history.mjs",
+    "check:changelog": "node tool/changelog-check.mjs",
+    "check:docs": "node tool/docs-check.mjs",
+    "check:licence": "node tool/licence-check.mjs",
+    "test": "node --test 'test/*.test.mjs'"
+  },
+  "devDependencies": {
+    "style-dictionary": "5.5.5"
+  }
+}
