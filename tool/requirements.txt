@@ -1,0 +1,5 @@
+# Dependencies of tool/generate_logo.py, pinned exactly. Install into a virtual environment:
+#   python3 -m venv .venv && .venv/bin/pip install -r tool/requirements.txt
+# Licences: fonttools MIT, uharfbuzz Apache-2.0.
+fonttools==4.66.1
+uharfbuzz==0.56.2
